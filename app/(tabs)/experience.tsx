@@ -24,7 +24,7 @@ export default function Experience() {
             <Text>광고</Text>
           </View>
           <View style={styles.product}>
-            제품
+            <Text>제품</Text>
           </View>
 
 
