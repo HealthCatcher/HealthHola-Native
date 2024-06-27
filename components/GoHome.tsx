@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Text, TouchableOpacity} from "react-native";
 import {useNavigation} from "@react-navigation/native";
-
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const GoHome = () => {
   const navigation = useNavigation();
@@ -10,7 +10,7 @@ const GoHome = () => {
           onPress={() => navigation.navigate('index')}
           style={{marginLeft: 16}}
       >
-        <Text style={{color: '#fff', fontWeight: 'bold'}}>홈</Text>
+        <Ionicons name="home" size={30} color="white"/>
       </TouchableOpacity>
   );
 };
