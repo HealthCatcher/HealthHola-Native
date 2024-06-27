@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Stack, Link } from 'expo-router';
+import GoHome from "@/components/GoHome";
 
 const PostList = () => {
   const title = '비타민 C';
@@ -18,7 +19,7 @@ const PostList = () => {
   );
 };
 
-const Header = () => {
+const community = () => {
   return (
     <>
       <Stack.Screen
@@ -29,6 +30,7 @@ const Header = () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },
+          headerLeft: () => <GoHome/>,
         }}
       />
       <View style={styles.header}>
@@ -122,4 +124,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Header;
+export default community;

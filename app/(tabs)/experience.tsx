@@ -1,6 +1,7 @@
 import {View, Text, StyleSheet} from "react-native";
 import {Stack} from "expo-router";
 import React from "react";
+import GoHome from "@/components/GoHome";
 
 export default function Experience() {
   return (
@@ -13,6 +14,7 @@ export default function Experience() {
               headerTitleStyle: {
                 fontWeight: "bold",
               },
+              headerLeft: () => <GoHome/>,
             }}
         />
           <View style={styles.category}>
