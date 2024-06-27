@@ -15,7 +15,7 @@ export default function Home() {
     <View style={styles.container}>
       <Stack.Screen
         options={{
-          title: "My home",
+          title: "HearUR",
           headerStyle: { backgroundColor: "#f4511e" },
           headerTintColor: "#fff",
           headerTitleStyle: {
@@ -25,6 +25,7 @@ export default function Home() {
       />
       <Text>Home Screen</Text>
       <Link href={{ pathname: "details", params: { name: "Bacon" } }}>Go to Details</Link>
+      <Link href={{ pathname: "login", params: { name: "Eggs" } }}>Go to Details... again</Link>
     </View>
   );
 }
